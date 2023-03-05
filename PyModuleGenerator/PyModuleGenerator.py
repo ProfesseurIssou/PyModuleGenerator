@@ -47,7 +47,7 @@ def PyModuleGenerator(config: PyModuleGeneratorConfig, clearBuildFolder: bool = 
     # Create the setup.py file
     print("PyModuleGenerator: create setup.py")
     setupFile = open(os.path.join(config.buildFolder, "setup.py"), "w")
-    setupFile.write("from setuptools import setup" + os.linesep)
+    setupFile.write("from setuptools import setup, find_packages" + os.linesep)
     setupFile.write(os.linesep)
     setupFile.write('with open("README.md","r") as fh:' + os.linesep)
     setupFile.write("    long_description = fh.read()" + os.linesep)
