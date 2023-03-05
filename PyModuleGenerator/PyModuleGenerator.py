@@ -19,7 +19,6 @@ class PyModuleGeneratorConfig:
     moduleAuthorEmail: str = ""
     moduleLicense: str = ""
 
-    packages: list[str] = ""
     moduleDependencies: list[str] = ""
     moduleTags: list[str] = ""
 
@@ -63,7 +62,7 @@ def PyModuleGenerator(config: PyModuleGeneratorConfig, clearBuildFolder: bool = 
     setupFile.write("    author='" + config.moduleAuthor + "'," + os.linesep)
     setupFile.write("    author_email='" + config.moduleAuthorEmail + "'," + os.linesep)
     setupFile.write("    license='" + config.moduleLicense + "'," + os.linesep)
-    setupFile.write("    packages=['" + config.moduleName + "']," + os.linesep)
+    setupFile.write("    packages=find_packages()," + os.linesep)
     setupFile.write("    install_requires=[" + os.linesep)
     for dependency in config.moduleDependencies:
         setupFile.write("        '" + dependency + "'," + os.linesep)

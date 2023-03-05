@@ -50,7 +50,6 @@ config: PyModuleGenerator.PyModuleGeneratorConfig = PyModuleGenerator.PyModuleGe
     moduleAuthorEmail="",
     moduleLicense="MIT",
 
-    packages=["MyModule"],
     moduleDependencies=[],
     moduleTags=[], # https://pypi.org/classifiers/
 )

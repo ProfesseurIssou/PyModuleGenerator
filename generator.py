@@ -8,7 +8,7 @@ config: PyModuleGenerator.PyModuleGeneratorConfig = PyModuleGenerator.PyModuleGe
     modulePath="D:\\Dev\\Projects\\PyModuleGenerator\\PyModuleGenerator",
     buildFolder="D:\\Dev\\Projects\\PyModuleGenerator\\build",
     moduleName="PyModuleGenerator",
-    moduleVersion="1.0.1",
+    moduleVersion="1.1.0",
     moduleDescription="A simple python module generator",
     moduleLongDescription=long_description,
     moduleLongDescriptionType="text/markdown",
@@ -18,7 +18,6 @@ config: PyModuleGenerator.PyModuleGeneratorConfig = PyModuleGenerator.PyModuleGe
     moduleAuthorEmail="alix.hamidou@gmail.com",
     moduleLicense="MIT",
 
-    packages=["PyModuleGenerator"],
     moduleDependencies=[
         "setuptools==63.2.0",
         "twine==3.8.0"
